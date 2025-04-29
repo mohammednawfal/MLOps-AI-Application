@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nahas/OneDrive/Desktop/MLOps-AI-Application/mlruns/221634838727351972/b77d9fb1108e4b7fac6ddaf18b21d73e/artifacts
+end_time: 1745888222232
+entry_point_name: ''
+experiment_id: '221634838727351972'
+lifecycle_stage: active
+run_id: b77d9fb1108e4b7fac6ddaf18b21d73e
+run_name: languid-zebra-871
+run_uuid: b77d9fb1108e4b7fac6ddaf18b21d73e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745887704663
+status: 4
+tags: []
+user_id: nahas

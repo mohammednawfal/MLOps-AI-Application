@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/nahas/OneDrive/Desktop/MLOps-AI-Application/mlruns/221634838727351972/2c41b0857b184168af6e663966adbf74/artifacts
+end_time: 1745890324556
+entry_point_name: ''
+experiment_id: '221634838727351972'
+lifecycle_stage: active
+run_id: 2c41b0857b184168af6e663966adbf74
+run_name: angry-sheep-669
+run_uuid: 2c41b0857b184168af6e663966adbf74
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1745888347143
+status: 3
+tags: []
+user_id: nahas

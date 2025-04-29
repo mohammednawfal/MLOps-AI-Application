@@ -1,0 +1,6 @@
+artifact_location: file:///C:/Users/nahas/OneDrive/Desktop/MLOps-AI-Application/mlruns/221634838727351972
+creation_time: 1745887703996
+experiment_id: '221634838727351972'
+last_update_time: 1745887703996
+lifecycle_stage: active
+name: cifar10_image_denoising_training
