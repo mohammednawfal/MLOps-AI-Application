@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+__pycache__/
+*.log
+.git/
+.gitignore
+data/
+mlruns/
+results/
+tests/
+*.gitkeep
