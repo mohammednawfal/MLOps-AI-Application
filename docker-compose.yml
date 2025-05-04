@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  denoising_app:
+    image: image_denoising_app
+    build: .
+    ports:
+      - "8000:8000"
+    container_name: denoising_app
+    restart: always
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus:/etc/prometheus
+    ports:
+      - "9090:9090"
+    restart: always
+    depends_on:
+      - denoising_app  # Make sure this points to the correct service name
+
+  node_exporter:
+    image: prom/node-exporter:latest
+    container_name: node_exporter
+    ports:
+      - "9100:9100"
+    restart: always
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
+    restart: always
