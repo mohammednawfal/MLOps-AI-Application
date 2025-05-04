@@ -1,10 +1,39 @@
 # MLOps-AI-Application
-AI application project for the course DA5402.
-You can find the full github repo at: https://github.com/mohammednawfal/MLOps-AI-Application
 
-# Instructions
-1. Extract all files into a single folder.
-2. From the root folder, run on terminal, "docker compose up --build".
-3. The FastAPI endpoint for image denoising can be accessed at "localhost:8000/docs". This project is only limited to denoising images of the CIFFAR-10 dataset. Sample test images and corresponding clean images are present in "noisy_test" and "clean_test".
-4. The Prometheus Instrumentation Interface can be accessed at "localhost:9090".
-5. The Grafana Interface can be accessed at "localhost:3000". To use Prometheus as a data source, configure the prometheus connection using "http://prometheus:9090". You can then use data siphoned from promtheus in building your dashboard.
+This repository contains the AI application project for the course **DA5402**.  
+GitHub Repository: [MLOps-AI-Application](https://github.com/mohammednawfal/MLOps-AI-Application)
+
+## Overview
+
+This project demonstrates a full MLOps pipeline for image denoising using the CIFAR-10 dataset. It integrates **FastAPI**, **Docker**, **Prometheus**, and **Grafana** to provide a complete deployment and monitoring solution.
+
+---
+
+## Setup Instructions
+
+1. **Extract all files** into a single folder.
+2. **Navigate to the root folder** in your terminal.
+3. Run the following command to build and start the application:
+   ```bash
+   docker compose up --build
+
+## Application Endpoints
+
+- **FastAPI (Image Denoising)**  
+  Access the API documentation at: [http://localhost:8000/docs](http://localhost:8000/docs)  
+  > **Note:** This project only supports denoising images from the **CIFAR-10** dataset.  
+  > Sample noisy and clean images are provided in the `noisy_test` and `clean_test` folders, respectively.
+
+- **Prometheus Monitoring Interface**  
+  [http://localhost:9090](http://localhost:9090)
+
+- **Grafana Dashboard Interface**  
+  [http://localhost:3000](http://localhost:3000)
+
+  To configure Prometheus as a data source in Grafana:
+  1. Go to **Settings > Data Sources**.
+  2. Add a new Prometheus data source with the URL:
+     ```
+     http://prometheus:9090
+     ```
+  3. You can now use Prometheus metrics to create custom dashboards.
